@@ -1,0 +1,5 @@
+Under NT, serial ports are exclusive devices, and only one application can have a port open at a time. That’s normally what you’d want, but there are many cases when it would be handy to be able to spy on the serial communications of another application. For example, you might be trying to debug your own high-level driver that uses the serial port to communicate with a particular device. Or, you might be trying to uncover the serial interface used by some commercial hardware (UPS, GPS, etc.) so that you can write your own custom software to manipulate the device instead.
+
+Although NT normally prevents two applications from both accessing the same serial port, it’s still possible to write a serial-port monitor that spies on the communications of another application. This article will provide the necessary device-driver support, as well as a simple application for displaying the resulting serial-port data.
+
+Link: https://www.drdobbs.com/a-serial-port-spy-for-nt/184416559
